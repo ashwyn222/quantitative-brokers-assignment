@@ -1,0 +1,28 @@
+<div class="container">
+<div>
+    <select (change)="onChange($event.target.value)">
+        <option *ngFor="let symbol of symbols">{{symbol}}</option>
+    </select>
+</div>
+
+<div>
+    <ngx-charts-line-chart
+        [view]="view"
+        [scheme]="colorScheme"
+        [results]="multi"
+        [gradient]="gradient"
+        [xAxis]="showXAxis"
+        [yAxis]="showYAxis"
+        [legend]="showLegend"
+        [showXAxisLabel]="showXAxisLabel"
+        [showYAxisLabel]="showYAxisLabel"
+        [xAxisLabel]="xAxisLabel"
+        [yAxisLabel]="yAxisLabel"
+        [autoScale]="autoScale"
+        [timeline]="timeline"
+        [yScaleMax]="yScaleMax"
+        [yScaleMin]="yScaleMin"
+    >
+    </ngx-charts-line-chart>
+</div>
+</div>
