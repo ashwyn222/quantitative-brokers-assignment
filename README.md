@@ -1,5 +1,5 @@
 ## Quantitative Brokers
-## Solution to the assignement
+## Solution to the assignment
 
 ## Step 1
 To install dependencies
